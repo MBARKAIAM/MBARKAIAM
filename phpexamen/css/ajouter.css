@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "poppins",sans-serif;
+}
+
+.form-box {
+    background: #ffffff; /* White background for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px 0; /* Margin around the box */
+    width: 100%; /* Full width */
+}
+:root{
+    --primary-color: #fe5b3d;
+    --secondary-color: #fFAC38;
+    --text-color: #444;
+    --gradient-color: linear-gradient(#fe5b3d, #fFAC38);
+}
+
+body{
+    background: #E9EEF8;
+}
+
+header{
+    
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #ffffff;
+        padding: 15px 100px;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500px;
+}
+.navbar a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: var(--gradient-color);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+
+.logo img{
+    width: 40px;
+    left: -80px;
+    position: relative;
+    top: 1px;
+}
+.logo-text{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-left: -25%;
+   
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin: 50px auto; 
+    max-width: 600px; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+    margin-left: 0; /* Remove the left margin */
+}
+
+.container h2 span {
+    color: var(--primary-color);
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container input[type="text"],
+.container input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.container button {
+    padding: 12px 24px; 
+    background-color: #474fa0; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.container button:hover {
+    background-color: var(--primary-color); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
